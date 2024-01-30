@@ -1,5 +1,6 @@
 const API_URL = "https://your-new-api-url.com/tasks";
 const newTaskButton = document.getElementById("newTask");
+const taskInput = document.getElementById("task-input");
 const taskDetail = document.getElementById("task-detail");
 const taskDeadLine = document.getElementById("task-deadline");
 const date = new Date();
@@ -84,7 +85,7 @@ const renderTheTask = (tasks) => {
     taskContainer.innerHTML += `
             <div class="row m-3 p-3 bg-info-subtle ${getTaskTextClass(
               taskStatus
-            )}" ondblclick="changeStatus(${id})">
+            )}" ondblclick="changeStatus('${id}')">
                 <div class="col-6">${taskName}</div>
                 <div class="col-3">${taskDeadLine}</div>
                 <div class="col-3">${taskStatus}</div>
@@ -111,7 +112,7 @@ const addNewTask = () => {
     taskStatus: "Pending",
   };
 
-  tasks.push(newTask);
+  //   tasks.push(newTask);
 
   doApiCall(API_URL, "POST", JSON.stringify(newTask)).then((res) => {
     // console.log(res);

@@ -1,0 +1,8 @@
+.row>section {
+    border-bottom: 2px solid #011222;
+}
+
+#task-input {
+    display: none;
+    align-items: center;
+}

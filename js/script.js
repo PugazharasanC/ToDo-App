@@ -1,4 +1,4 @@
-const API_URL = "https://658d25a87c48dce947389570.mockapi.io/api/v1/tasks";
+const API_URL = "https://your-new-api-url.com/tasks";
 const newTaskButton = document.getElementById("newTask");
 const taskDetail = document.getElementById("task-detail");
 const taskDeadLine = document.getElementById("task-deadline");

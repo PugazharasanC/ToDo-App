@@ -1,4 +1,3 @@
-
 # ToDo App
 
 A simple ToDo application created as a demo for the FSD55WD Tamil batch. This application allows you to manage your tasks, add new ones, and mark them as completed. It uses a mock API for task data storage.
@@ -30,6 +29,17 @@ A simple ToDo application created as a demo for the FSD55WD Tamil batch. This ap
    ```
 
 3. Open the `index.html` file in your preferred web browser.
+
+4. Update the API URL:
+   - Open the `script.js` file in a text editor.
+   - Locate the `const API_URL` declaration.
+   - Update the URL to the new API endpoint:
+
+     ```javascript
+     const API_URL = "https://new-api-url.com/tasks";
+     ```
+
+   - Save the changes to the `script.js` file.
 
 ## Usage
 
